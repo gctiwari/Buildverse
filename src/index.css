@@ -1,0 +1,58 @@
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000; /* Above the video */
+  background-color: white; /* White background */
+}
+
+.navbar-logo {
+  height: auto;
+  width: auto;
+  max-height: 5vh; /* Adjust to fit the navbar height */
+  color: white; /* This won't affect the logo unless it's an SVG or a font icon */
+  margin-left: 100px; /* Move logo to the right */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Spacing between menu options */
+  margin-left: 30rem; /* Adjust this to move the menu options a bit to the left */
+}
+
+.navbar-menu a {
+  color: gold; /* Text color for the menu items */
+  text-decoration: none;
+  font-size: 1rem; /* Increase font size for better visibility */
+  font-weight: 500; /* Medium font weight for a professional look */
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Rounded corners for a refined look */
+  transition: all 0.3s ease; /* For a smooth hover effect */
+}
+
+.navbar-menu a:hover, .navbar-item-active {
+  color: black; /* Text color on hover and for the active item */
+  background-color: rgba(255, 255, 255, 0.934); /* Background color on hover and for the active item */
+  text-decoration: underline; /* Text decoration on hover and for the active item */
+}
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Adjust as necessary */
+  height: 300px; /* Adjust as necessary */
+  /* Other styles */
+}
+
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  /* Add left or right property for positioning */
+}
